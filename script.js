@@ -2,7 +2,7 @@ const eventsContainer = document.getElementById("eventsContainer");
 
 function loadMoreEvents() {
   fetch(
-    "https://gist.githubusercontent.com/QuantumV2/7b8dacc7726f861174aa9f9b444c3241/raw/92c4f25e9d4628e5e88acde9db8b4c0f502a4dcf/echeosofhistory.json"
+    "https://gist.githubusercontent.com/QuantumV2/7b8dacc7726f861174aa9f9b444c3241/raw"
   )
     .then((response) => response.json())
     .then((events) => {
