@@ -1,0 +1,85 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app-header {
+  background-color: #1da1f2;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.events-container {
+  background-color: #f5f8fa;
+  padding: 10px;
+}
+
+.event-tweet {
+  background-color: white;
+  border: 1px solid #e1e8ed;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.tweet-date {
+  font-size: 0.9em;
+  color: #657786;
+  margin-bottom: 5px;
+}
+
+.mention,
+.hashtag {
+  color: #1da1f2;
+}
+
+.tweet-content {
+  font-size: 1.1em;
+}
+
+.app-footer {
+  padding: 10px;
+  text-align: center;
+}
+.event-tweet img {
+/* margin-left: 50%;
+ transform: translate(-50%, 0%);*/
+ margin-top: 10px;
+ border-radius: 20px;
+ max-width: 160%;
+ height: auto;
+}
+
+.user-info {
+    display: inline-block;
+}
+.flex-container {
+    display: flex;
+    align-items: center; /* vertically center items */
+}
+
+.square-image-container {
+  border-radius: 50%;
+  width: 40px; /* or any size you want */
+  height: 40px; /* this should be the same as the width for a 1:1 aspect ratio */
+  overflow: hidden; /* this ensures that any excess image is clipped */
+  display: flex; /* use flexbox to center the image */
+  justify-content: center; /* center horizontally */
+  align-items: center; /* center vertically */
+}
+
+.square-image-container img {
+  object-fit: cover; /* this will cover the area of the container without stretching the image */
+  margin-bottom: 10px;
+}
+
+/* Add responsive design */
+@media (min-width: 600px) {
+  .events-container {
+    width: 50%;
+    margin: auto;
+  }
+}
